@@ -1,0 +1,282 @@
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.alululu_tb
+# vsim -gui work.alululu_tb 
+# Start time: 15:22:20 on Jun 24,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alululu_tb(ctb)
+# ** Warning: (vsim-3473) Component instance "UUT : ALULULU" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /alululu_tb File: C:/Users/saiko/Desktop/ALULULU/ALULULU_TB.vhd
+add wave -position end sim:/alululu_tb/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/saiko/Desktop/ALULULU/ALULULU.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/saiko/Desktop/ALULULU/ALULULU.mpf).  File can not be renamed.
+# End time: 15:22:59 on Jun 24,2022, Elapsed time: 0:00:39
+# Errors: 2, Warnings: 4
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.alululu_tb
+# vsim -gui work.alululu_tb 
+# Start time: 15:26:57 on Jun 24,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alululu_tb(ctb)
+# Loading work.alululu(behavioral)
+run
+run
+run
+run
+run
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/saiko/Desktop/ALULULU/ALULULU.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/saiko/Desktop/ALULULU/ALULULU.mpf).  File can not be renamed.
+# End time: 15:27:20 on Jun 24,2022, Elapsed time: 0:00:23
+# Errors: 2, Warnings: 3
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.alululu_tb
+# vsim -gui work.alululu_tb 
+# Start time: 15:54:09 on Jun 24,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alululu_tb(ctb)
+# Loading work.alululu(behavioral)
+run
+add wave -position end sim:/alululu_tb/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run -all
+quit -sim
+# ** Error: Acs sdne.
+# x
+#        Unable to replace existing ini file (C:/Users/saiko/Desktop/ALULULU/ALULULU.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/saiko/Desktop/ALULULU/ALULULU.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/saiko/Desktop/ALULULU/ALULULU.mpf).  File can not be renamed.
+# End time: 15:57:54 on Jun 24,2022, Elapsed time: 0:03:45
+# Errors: 3, Warnings: 15
+# Compile of ALULULU.vhd was successful.
+# Compile of ALULULU_TB.vhd was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.alululu_tb
+# vsim -gui work.alululu_tb 
+# Start time: 16:00:43 on Jun 24,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alululu_tb(ctb)
+# Loading work.alululu(behavioral)
+add wave -position end sim:/alululu_tb/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/saiko/Desktop/ALULULU/ALULULU.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/saiko/Desktop/ALULULU/ALULULU.mpf).  File can not be renamed.
+# End time: 16:01:12 on Jun 24,2022, Elapsed time: 0:00:29
+# Errors: 2, Warnings: 2

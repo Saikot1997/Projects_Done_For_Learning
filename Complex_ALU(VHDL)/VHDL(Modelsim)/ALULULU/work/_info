@@ -1,0 +1,146 @@
+m255
+K4
+z2
+!s11e vcom 2021.1 2021.02, Feb  3 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/21.1
+Ealu4bit
+Z0 w1656012385
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 14
+Z5 dC:/Users/saiko/Desktop/ALULULU
+Z6 8C:\Users\saiko\Desktop\ALULULU\ALULULU.vhd
+Z7 FC:\Users\saiko\Desktop\ALULULU\ALULULU.vhd
+l0
+L8 1
+VY:7X9[UG3JXafjR=a1mIX0
+!s100 K[aiL?KcmfA<dGB>>hB3Q0
+Z8 OV;C;2021.1;73
+32
+Z9 !s110 1656076928
+!i10b 1
+Z10 !s108 1656076928.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\saiko\Desktop\ALULULU\ALULULU.vhd|
+Z12 !s107 C:\Users\saiko\Desktop\ALULULU\ALULULU.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 7 alu4bit 0 22 Y:7X9[UG3JXafjR=a1mIX0
+!i122 14
+l19
+Z15 L17 62
+Vkzn=ZP5AFaZ=S>8QbhKNf2
+!s100 Mo^SQ]=UaXea^7bJBYnY?2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ealululu
+Z16 w1656078452
+R1
+R2
+R3
+R4
+!i122 48
+R5
+R6
+R7
+l0
+L8 1
+V=odmDf9J`k0oh9lim]bUT1
+!s100 4S_ZM]Xlk4]OK>BZckamN1
+R8
+32
+Z17 !s110 1656079230
+!i10b 1
+Z18 !s108 1656079230.000000
+R11
+R12
+!i113 1
+R13
+R14
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 7 alululu 0 22 =odmDf9J`k0oh9lim]bUT1
+!i122 48
+l19
+R15
+V`^=5zP5P28>5>JfTLiLLg0
+!s100 dm;XlD<ACX>BHSna4medE2
+R8
+32
+R17
+!i10b 1
+R18
+R11
+R12
+!i113 1
+R13
+R14
+Ealululu_tb
+Z19 w1656079228
+R1
+R2
+R3
+R4
+!i122 49
+R5
+Z20 8C:\Users\saiko\Desktop\ALULULU\ALULULU_TB.vhd
+Z21 FC:\Users\saiko\Desktop\ALULULU\ALULULU_TB.vhd
+l0
+L6 1
+VI]2LZ1mbK:=0Lg0:H7<=K3
+!s100 2a6Qj0fdRi>8fVm_m]PZF2
+R8
+32
+R17
+!i10b 1
+R18
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\saiko\Desktop\ALULULU\ALULULU_TB.vhd|
+Z23 !s107 C:\Users\saiko\Desktop\ALULULU\ALULULU_TB.vhd|
+!i113 1
+R13
+R14
+Actb
+R1
+R2
+R3
+R4
+Z24 DEx4 work 10 alululu_tb 0 22 I]2LZ1mbK:=0Lg0:H7<=K3
+!i122 49
+l27
+Z25 L10 41
+VQYe4i3cP6LMd?A4jHI9b>3
+!s100 M85hJQ9VaiSMUg`76Uam:0
+R8
+32
+R17
+!i10b 1
+R18
+R22
+R23
+!i113 1
+R13
+R14

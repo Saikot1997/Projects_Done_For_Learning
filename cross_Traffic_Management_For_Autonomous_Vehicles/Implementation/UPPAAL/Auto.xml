@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>
+chan wait,connect,send_message,queue,no_pass_signal,pass_signal;
+chan Receive_direction, Schedule_lane, Update,Select_earliest_deadline, Allow_car, Reset;
+ 
+bool pass = false;
+</declaration>
+	<template>
+		<name x="5" y="5">Vehicle</name>
+		<declaration>// Place local declarations here.
+</declaration>
+		<location id="id0" x="-484" y="-204">
+			<name x="-494" y="-238">Start</name>
+		</location>
+		<location id="id1" x="-357" y="-204">
+			<name x="-367" y="-238">Arrival</name>
+		</location>
+		<location id="id2" x="-204" y="-204">
+			<name x="-214" y="-238">Connection</name>
+		</location>
+		<location id="id3" x="25" y="-153">
+			<name x="15" y="-187">Receiving</name>
+		</location>
+		<location id="id4" x="-357" y="-93">
+			<name x="-367" y="-127">Driving</name>
+		</location>
+		<location id="id5" x="-204" y="-102">
+			<name x="-214" y="-136">Waiting</name>
+		</location>
+		<location id="id6" x="-493" y="-93">
+			<name x="-503" y="-127">Completion</name>
+		</location>
+		<init ref="id0"/>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id0"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id3"/>
+			<label kind="synchronisation" x="-136" y="-204">send_message!</label>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id5"/>
+			<label kind="assignment" x="-186" y="-85">pass = true</label>
+			<nail x="-136" y="-68"/>
+			<nail x="-119" y="-136"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id6"/>
+			<label kind="synchronisation" x="-475" y="-110">send_message!</label>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id4"/>
+			<label kind="guard" x="-306" y="-136">pass == true</label>
+			<label kind="synchronisation" x="-306" y="-119">pass_signal!</label>
+			<label kind="assignment" x="-339" y="-97">pass = false</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id5"/>
+			<label kind="synchronisation" x="-110" y="-153">queue!</label>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id2"/>
+			<label kind="synchronisation" x="-339" y="-221">connect!</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-466" y="-221">wait!</label>
+		</transition>
+	</template>
+	<template>
+		<name>sys</name>
+		<location id="id7" x="-510" y="52">
+			<name x="-520" y="18">Completion</name>
+		</location>
+		<location id="id8" x="-501" y="-59">
+			<name x="-511" y="-93">Start</name>
+		</location>
+		<location id="id9" x="-221" y="-59">
+			<name x="-231" y="-93">Connection</name>
+		</location>
+		<location id="id10" x="8" y="-8">
+			<name x="-2" y="-42">Receiving</name>
+		</location>
+		<location id="id11" x="-221" y="43">
+			<name x="-231" y="9">Waiting</name>
+		</location>
+		<location id="id12" x="-374" y="52">
+			<name x="-384" y="18">Driving</name>
+		</location>
+		<location id="id13" x="-374" y="-59">
+			<name x="-384" y="-93">Arrival</name>
+		</location>
+		<init ref="id8"/>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id8"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id10"/>
+			<label kind="synchronisation" x="-153" y="-59">send_message?</label>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id11"/>
+			<nail x="-153" y="77"/>
+			<nail x="-136" y="9"/>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id7"/>
+			<label kind="synchronisation" x="-493" y="51">send_message?</label>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id12"/>
+			<label kind="synchronisation" x="-348" y="52">pass_signal?</label>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id11"/>
+			<label kind="synchronisation" x="-127" y="-8">queue?</label>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id9"/>
+			<label kind="synchronisation" x="-356" y="-76">connect?</label>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id13"/>
+			<label kind="synchronisation" x="-483" y="-76">wait?</label>
+		</transition>
+	</template>
+	<template>
+		<name>ICS0</name>
+		<declaration> </declaration>
+		<location id="id14" x="-212" y="42">
+			<name x="-222" y="8">Start</name>
+		</location>
+		<location id="id15" x="-59" y="51">
+			<name x="-69" y="17">Receiving</name>
+		</location>
+		<location id="id16" x="85" y="127">
+			<name x="75" y="93">Scheduling</name>
+		</location>
+		<location id="id17" x="-76" y="187">
+			<name x="-86" y="153">Decision</name>
+		</location>
+		<location id="id18" x="-221" y="178">
+			<name x="-231" y="144">Allowance</name>
+		</location>
+		<init ref="id14"/>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id14"/>
+			<label kind="synchronisation" x="-216" y="93">Reset!</label>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id16"/>
+			<label kind="synchronisation" x="110" y="127">Update!</label>
+			<nail x="119" y="161"/>
+			<nail x="153" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id18"/>
+			<label kind="synchronisation" x="-203" y="165">Allow_car!</label>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id17"/>
+			<label kind="synchronisation" x="-58" y="140">Select_earliest_deadline!</label>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id16"/>
+			<label kind="synchronisation" x="-41" y="72">Schedule_lane!</label>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id15"/>
+			<label kind="synchronisation" x="-194" y="29">Receive_direction!</label>
+		</transition>
+	</template>
+	<template>
+		<name>ICS_sys</name>
+		<location id="id19" x="-221" y="178">
+			<name x="-231" y="144">Allowance</name>
+		</location>
+		<location id="id20" x="-212" y="42">
+			<name x="-222" y="8">Start</name>
+		</location>
+		<location id="id21" x="-59" y="51">
+			<name x="-69" y="17">Receiving</name>
+		</location>
+		<location id="id22" x="85" y="127">
+			<name x="75" y="93">Scheduling</name>
+		</location>
+		<location id="id23" x="-76" y="187">
+			<name x="-86" y="153">Decision</name>
+		</location>
+		<init ref="id20"/>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id20"/>
+			<label kind="synchronisation" x="-216" y="93">Reset?</label>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id22"/>
+			<label kind="synchronisation" x="110" y="127">Update?</label>
+			<nail x="119" y="161"/>
+			<nail x="153" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id19"/>
+			<label kind="synchronisation" x="-203" y="165">Allow_car?</label>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id23"/>
+			<label kind="synchronisation" x="-58" y="140">Select_earliest_deadline?</label>
+		</transition>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id22"/>
+			<label kind="synchronisation" x="-41" y="72">Schedule_lane?</label>
+		</transition>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id21"/>
+			<label kind="synchronisation" x="-194" y="29">Receive_direction?</label>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+vehicle1 = Vehicle();
+p2 = sys();
+p3 = ICS0();
+p4 = ICS_sys();
+// List one or more processes to be composed into a system.
+system vehicle1, p2, p3, p4;
+</system>
+	<queries>
+		<query>
+			<formula>A[] not deadlock</formula>
+			<comment></comment>
+		</query>
+	</queries>
+</nta>

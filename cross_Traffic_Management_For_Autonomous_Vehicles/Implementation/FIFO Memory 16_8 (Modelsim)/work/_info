@@ -1,0 +1,56 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/21.1
+Emyfifo_1
+Z0 w1655756765
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 11
+Z5 dC:/Users/saiko/Desktop/FIFO Memory 16_8
+Z6 8C:\Users\saiko\Desktop\FIFO Memory 16_8\FIFO_memory.vhd
+Z7 FC:\Users\saiko\Desktop\FIFO Memory 16_8\FIFO_memory.vhd
+l0
+L5 1
+V`<lkJozjZLz8:UCHfYFzN3
+!s100 [bDR]67d8bf8=>?WF]Q4D3
+Z8 OV;C;2021.1;73
+32
+Z9 !s110 1655756767
+!i10b 1
+Z10 !s108 1655756767.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\saiko\Desktop\FIFO Memory 16_8\FIFO_memory.vhd|
+!s107 C:\Users\saiko\Desktop\FIFO Memory 16_8\FIFO_memory.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 8 myfifo_1 0 22 `<lkJozjZLz8:UCHfYFzN3
+!i122 11
+l19
+L13 38
+VOU4F=gk[JTAkiV[DRXRQ50
+!s100 5mYXfU?J;IRPa[^YN5hPT2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+Z14 !s107 C:\Users\saiko\Desktop\FIFO Memory 16_8\FIFO_memory.vhd|
+!i113 1
+R12
+R13

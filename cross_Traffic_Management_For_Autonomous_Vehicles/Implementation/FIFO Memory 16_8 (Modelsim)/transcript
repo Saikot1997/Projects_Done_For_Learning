@@ -1,0 +1,83 @@
+vsim -gui work.myfifo_1
+# vsim -gui work.myfifo_1 
+# Start time: 16:25:37 on Jun 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.myfifo_1(behavioral)
+add wave -position end sim:/myfifo_1/*
+run
+force -freeze sim:/myfifo_1/EN 1 0
+run
+force -freeze sim:/myfifo_1/RST 1 0
+run
+force -freeze sim:/myfifo_1/CLK 1 0
+run
+force -freeze sim:/myfifo_1/CLK 1 0, 0 {500000 ps} -r 1000000
+run
+run
+force -freeze sim:/myfifo_1/CLK 1 0, 0 {500000 ps} -r 1000000
+run
+force -freeze sim:/myfifo_1/CLK 1 0, 0 {500000 ps} -r 1000000
+run
+force -freeze sim:/myfifo_1/RST 0 0
+run
+force -freeze sim:/myfifo_1/CLK 0 0
+run
+force -freeze sim:/myfifo_1/W 1 0
+run
+force -freeze sim:/myfifo_1/DATAIN 10000000 0
+run
+force -freeze sim:/myfifo_1/DATAIN 11000000 0
+run
+force -freeze sim:/myfifo_1/DATAIN 11100000 0
+run
+force -freeze sim:/myfifo_1/W 0 0
+force -freeze sim:/myfifo_1/RED 1 0
+run
+run
+run
+run
+force -freeze sim:/myfifo_1/CLK 1 0
+force -freeze sim:/myfifo_1/CLK 1 0, 0 {5000000 ps} -r 10000000
+run
+run
+run
+run
+force -freeze sim:/myfifo_1/RED 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Error: Acs sdne.
+# ì
+#        Unable to replace existing ini file (C:/Users/saiko/Desktop/FIFO Memory 16_8/FIFO.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/saiko/Desktop/FIFO Memory 16_8/FIFO.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/saiko/Desktop/FIFO Memory 16_8/FIFO.mpf).  File can not be renamed.
+# End time: 16:31:07 on Jun 21,2022, Elapsed time: 0:05:30
+# Errors: 3, Warnings: 2

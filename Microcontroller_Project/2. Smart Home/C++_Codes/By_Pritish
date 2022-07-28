@@ -1,0 +1,93 @@
+
+#include <iostream>
+#include <string>
+#include <conio.h>
+
+
+
+ using namespace std;
+
+
+ class sensor // temperature control
+{
+    public:
+    sensor(int degrees)
+    {
+       cout<<" the temperature is"<<" "<<degrees"<<"endl;
+       cout<<endl;
+    };
+
+};
+
+
+void Automatic()
+{
+   int exp  ;
+   int xy;
+
+   cout<< "expected temperatue setting (24 is ideal)   "<<endl;
+   cin>>exp;
+
+   cout<< " temperature reading from sensor"<<endl;
+   cin>>xy;
+   if(xy<exp)
+   {
+
+    cout<<"temperature is set to 24 degrees" <<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<endl;
+   }
+
+   else
+    {
+
+      cout<<" temperature will be adjusted to 24 degrees"<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<endl;
+    }
+
+
+}
+
+
+  int main()
+  {
+
+ while(1)
+ {
+     int p;
+
+    cout<<"Which Feature you want to use"<<endl;
+    cout<<"(1) Manual " <<endl;
+    cout<<"(2) Automatic "<<endl;
+    cin>>p;
+
+
+
+if(p == 2)
+    {
+        Automatic();
+    }
+
+else
+{
+    
+  
+
+
+   int x;
+   
+   cout << "Write down the temperature" << endl;
+   cin>>x;
+   
+   sensor  startTime(x);
+    }
+
+ }
+
+getch();
+
+  }
+
