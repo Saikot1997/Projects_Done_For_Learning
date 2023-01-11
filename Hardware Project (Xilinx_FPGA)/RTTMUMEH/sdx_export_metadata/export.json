@@ -1,0 +1,29 @@
+{
+  "version": "2022.2",
+  "applications": [],
+  "platforms": [
+    {
+      "name": "uart_temp_esp_tcp"
+    }
+  ],
+  "systems": [
+    {
+      "name": "uart_temp_esp_tcp_SW_system",
+      "platform": "C:/Users/nniro/uart_temp_esp_tcp/export/uart_temp_esp_tcp/uart_temp_esp_tcp.xpfm",
+      "sysConfig": "uart_temp_esp_tcp",
+      "buildConfig": "Debug",
+      "applications": [
+        {
+          "name": "uart_temp_esp_tcp_SW",
+          "platform": "C:/Users/nniro/uart_temp_esp_tcp/export/uart_temp_esp_tcp/uart_temp_esp_tcp.xpfm",
+          "platformPath": "C:\\Users\\nniro\\uart_temp_esp_tcp\\export\\uart_temp_esp_tcp",
+          "sysConfig": "uart_temp_esp_tcp",
+          "domain": "standalone_domain",
+          "system": "uart_temp_esp_tcp_SW_system"
+        }
+      ],
+      "platformPath": "C:\\Users\\nniro\\uart_temp_esp_tcp\\export\\uart_temp_esp_tcp"
+    }
+  ],
+  "others": []
+}
